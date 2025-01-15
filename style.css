@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    /* background-color: blue; */
+    margin: auto;
+    padding: 15px;
+}
+
+.header{
+    background-color: #FF6B6B;
+    color: white;
+    padding: 15px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;     
+}
+
+.navBar{
+    background-color: #4ECDC4;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.navBar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navBar ul li{
+    margin: 0 20px; 
+}
+
+.main{
+    display: flex;
+    margin: 20px 0;
+}
+
+.sideBar{
+    background-color: #95E1D3;
+    width: 20%;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.sideBar ul{
+    list-style: none;
+    margin: 10px;
+}
+
+.content{
+    width: 80%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #FCE38A;
+    width: 250px;
+    /*  */
+    margin: 5px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.news{
+    background-color: #EAFFD0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.footer-column{
+    width: calc(33.33% - 20px);
+    min-width: 200px;
+    background-color: #33475c;
+    margin: 10px;
+}
+
+@media (max-width: 615px){
+    .navBar ul{
+        flex-wrap: wrap;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .sideBar{
+        width: 100%;
+        text-align: center;
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px){
+    .card{
+        width: calc(50% - 10px);
+        min-width: 200px;
+    }
+}
+@media (max-width: 425px){
+    .card{
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.new-card1{
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.new-card2{
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.news-container{
+    display: flex;
+}
